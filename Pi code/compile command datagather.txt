@@ -1,0 +1,8 @@
+COMPILE COMMAND OUT OF /home/pi/Downloads/raspicam-0.1.4/build/utils
+FOR OPENCV AND RASPICAM (and others) TO TAKE PICTURES WITH OPENCV FROM
+RASPI CAMERA:
+
+to fix the ncurses mess, just type stty sane in the terminal
+
+sudo g++ dataGather.cpp -o  masterAwesome -I/usr/local/include/ -lraspicam -lraspicam_cv -I/usr/local/include/opencv -I/usr/local/include -L/usr/local/lib -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -l wiringPi -lncurses -lopencv_core
+
